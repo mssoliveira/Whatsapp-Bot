@@ -4,7 +4,7 @@
   "description": "Bot Criado no intuito de aprendizado da biblioteca!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "server.js"
   },
   "author": "Maurício Souza",
   "license": "ISC",
