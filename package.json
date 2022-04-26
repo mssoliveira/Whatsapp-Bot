@@ -4,7 +4,6 @@
   "description": "Bot Criado no intuito de aprendizado da biblioteca!",
   "main": "index.js",
   "scripts": {
-    "start": "server.js"
   },
   "author": "Maurício Souza",
   "license": "ISC",
