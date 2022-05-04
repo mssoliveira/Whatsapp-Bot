@@ -87,12 +87,8 @@ client.on('message_create', async (msg) => {
 			mentions.push(contact);
 			text += `@${participant.id.user} `;
 		}
-		
-		await chat.sendMessage(text, { mentions });
-
-		
+		await chat.sendMessage(text, { mentions });	
 	}
-
 
 	if (msg.fromMe) {
 		if (msg.body === 'Oi') {
