@@ -17,30 +17,16 @@ client.on('ready', () => {
 
 client.initialize();
 
-client.on('message', async (message) => {	
-
-	if (
-		message.body === '#fodasemauricin' ||
-		message.body === '#foda-semauricin'
-	) {
-		message.reply(`Vá tomar no Cu!`);
-	}
-
+client.on('message', async (message) => {
 	if (message.body === '!me') {
-		message.reply(`Você é ${Math.floor(Math.random() * 101)}% gay.`);
+		message.reply(`Você é ${Math.floor(Math.random() * 101)}%`);
 	}
-
-	if (message.body === 'Boca') {
-		message.reply(`Você é uma Puta`);
-	}	
 });
 
 client.on('message_create', async (msg) => {
-
 	if (msg.body === '!ping') {
 		msg.reply('🎾 pong');
 	}
-
 	if (msg.body === '!todes') {
 		const chat = await msg.getChat();
 
@@ -74,22 +60,6 @@ client.on('message_create', async (msg) => {
 		}
 		await chat.sendMessage(text, { mentions });
 	}
-	if (msg.body === '!comedordegalo') {
-		const chat = await msg.getChat();
-		let text = '';
-		let mentions = [];
-		
-		for (let participant of chat.participants) {
-			const contact = await client.getContactById(
-				participant.id._serialized
-			);
-
-			mentions.push(contact);
-			text += `@${participant.id.user} `;
-		}
-		await chat.sendMessage(text, { mentions });	
-	}
-
 	if (msg.fromMe) {
 		if (msg.body === 'Oi') {
 			const contact = await msg.getContact();
