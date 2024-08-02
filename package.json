@@ -2,8 +2,9 @@
   "name": "whatsapp-bot",
   "version": "1.0.0",
   "description": "Bot Criado no intuito de aprendizado da biblioteca!",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+     "start": "node .",
   },
   "author": "Maurício Souza",
   "license": "ISC",
